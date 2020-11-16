@@ -7,24 +7,55 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="#">
-                <img src="img/logo-mesaposta.jpg" width="110">
-            </a>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#quem-somos">Quem Somos </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#parceiros">Parceiros </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Serviços </a>
-                  </li>
-                </ul>
+        <nav class="site-header py-1">
+            <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo-mesaposta.jpg" width="110">
+                </a>
+                <a class="nav-link" href="#quem-somos">Quem Somos </a>
+                <a class="nav-link" href="#produtos">Produtos </a>
+                <a class="nav-link" href="#servicos">Serviços </a>
+                <a href="#"></a>
             </div>
         </nav>
+
+        <main>
+            <div class="container">
+                <div id="mainSlider" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#mainSlider" data-slide-to="0" class="active"></li>
+                        <li data-target="#mainSlider" data-slide-to="1"></li>
+                        <li data-target="#mainSlider" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/mesa-teste7.jpg" class="d-block w-50" alt="Pagina 1">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>Teste página 1</h2>
+                                <p>Teste tag p 1</p>
+                                <a href="#" class="main-btn"> Link de acesso</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/mesa-teste8.jpg" class="d-block w-50" alt="Pagina 2">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>Teste página 2</h2>
+                                <p>Teste tag p 2</p>
+                                <a href="#" class="main-btn"> Link de acesso</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/mesa-teste9.jpg" class="d-block w-50" alt="Pagina 3">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>Teste página 3</h2>
+                                <p>Teste tag p 3</p>
+                                <a href="#" class="main-btn"> Link de acesso</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
 
         <section id="quem-somos">
             <div class="container-fluid quem-somos text-center padding">
@@ -34,26 +65,53 @@
             </div>
         </section>
 
-        <section id="parceiros">
+        <section id="produtos">
             <div class="container-fluid text-center padding parceiros">
                 <h3>PRODUTOS</h3>
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-4">
-                            <img src="img/mesa-teste2.jpg" width="100%">
+                            <a href="https://produto.mercadolivre.com.br/MLB-1630577628-jogo-americano-2-lugares-dupla-face-alta-moda-mesa-posta-_JM?quantity=4">
+                                <img src="img/ml1.jpg" width="100%">
+                            </a>
                         </div>
                         <div class="col-lg-4">
-                            <img src="img/mesa-teste7.jpg" width="100%">
+                            <a href="https://produto.mercadolivre.com.br/MLB-1630593186-jogo-americano-2-lugares-mesa-posta-_JM?variation=62105154314#reco_item_pos=0&reco_backend=machinalis-seller-items-pdp&reco_backend_type=low_level&reco_client=vip-seller_items-above&reco_id=0aa25b0f-45d8-451f-8d4a-5100b62ae7af">
+                                <img src="img/ml2.jpg" width="100%">
+                            </a>
                         </div>
                         <div class="col-lg-4">
-                            <img src="img/mesa-teste4.jpg" width="100%">
+                            <a href="https://produto.mercadolivre.com.br/MLB-1213262459-jogo-americano-cozinha-matelado-6-pc-c-porta-talheres-50x35-_JM#reco_item_pos=3&reco_backend=machinalis-pads&reco_backend_type=low_level&reco_client=vip-pads-related&reco_id=661b8b53-85aa-497d-a8c0-91c266318080&is_advertising=true&ad_domain=VIPCORE_RELATED&ad_position=4&ad_click_id=MWNiM2EwYzctMDg3My00NzJiLTk0ZWQtMGYyZWYxMWIwNjVj">
+                                <img src="img/ml3.jpg" width="100%">
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-
         </section>
-        
+
+        <section id="servicos">
+            <div class="container -fluid text-center padding servicos">
+                <h3>SERVIÇOS</h3>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <p class="padding">Sua mesa fica suja de café?</p>
+                            <img src="img/cafe-suja.jpg" width="100%">
+                        </div>
+                        <div class="col-lg-6">
+                            <p class="padding">Experimente nossos lindíssimos porta copos!</p>
+                            <img src="img/cafe-limpa.jpg" width="100%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class=" container-fluid text-center bg-footer padding">
+            <p>Desenvolvido por Lucas Labre</p>
+        </footer>
+    
     </body>
     
 </html>

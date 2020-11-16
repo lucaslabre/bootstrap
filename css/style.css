@@ -2,8 +2,17 @@ body{
     font: 20px Arial, sans-serif;
 }
 
-.navbar{
-    background-color: aquamarine;    
+.site-header{
+    background-color: rgb(101,103,102);
+}
+
+.nav-link{
+    color: white;
+}
+
+.nav-link:hover{
+    text-decoration: none;
+    color: yellow;
 }
 
 .quem-somos{
@@ -18,4 +27,9 @@ body{
 
 .parceiros{
     background-color: teal;
+}
+
+.bg-footer{
+    background-color: black;
+    color: white;
 }
